@@ -1,0 +1,8 @@
+# Alamofire is an HTTP networking library written in Swift.
+github "Alamofire/Alamofire" ~> 4.5
+# SwiftyJSON makes it easy to deal with JSON data in Swift.
+github "SwiftyJSON/SwiftyJSON"
+# Write great asynchronous code in Swift using futures and promises
+github "Thomvis/BrightFutures"
+# A simple wrapper for the iOS Keychain to allow you to use it in a similar fashion to User Defaults. Written in Swift.
+github "jrendel/SwiftKeychainWrapper" ~> 3.0

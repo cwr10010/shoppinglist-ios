@@ -8,13 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		353174FB1F8E932D0019A6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353174FA1F8E932D0019A6C7 /* AppDelegate.swift */; };
-		353174FD1F8E932D0019A6C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353174FC1F8E932D0019A6C7 /* ViewController.swift */; };
+		353174FD1F8E932D0019A6C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353174FC1F8E932D0019A6C7 /* LoginViewController.swift */; };
 		353175001F8E932D0019A6C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353174FE1F8E932D0019A6C7 /* Main.storyboard */; };
 		353175031F8E932E0019A6C7 /* ShoppingListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 353175011F8E932E0019A6C7 /* ShoppingListApp.xcdatamodeld */; };
 		353175051F8E932E0019A6C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353175041F8E932E0019A6C7 /* Assets.xcassets */; };
 		353175081F8E932E0019A6C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353175061F8E932E0019A6C7 /* LaunchScreen.storyboard */; };
 		353175131F8E932E0019A6C7 /* ShoppingListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175121F8E932E0019A6C7 /* ShoppingListAppTests.swift */; };
 		3531751E1F8E932E0019A6C7 /* ShoppingListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531751D1F8E932E0019A6C7 /* ShoppingListAppUITests.swift */; };
+		353175511F8EA2750019A6C7 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175501F8EA2750019A6C7 /* LoginData.swift */; };
+		353175531F8EA5E50019A6C7 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175521F8EA5E50019A6C7 /* AuthorizationData.swift */; };
+		353175551F8F2F1B0019A6C7 /* ShoppingListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175541F8F2F1B0019A6C7 /* ShoppingListItemTableViewCell.swift */; };
+		3531755B1F8FD9D00019A6C7 /* ShoppingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531755A1F8FD9D00019A6C7 /* ShoppingListItem.swift */; };
+		353175651F913A520019A6C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175641F913A520019A6C7 /* Alamofire.framework */; };
+		353175681F913C4C0019A6C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175641F913A520019A6C7 /* Alamofire.framework */; };
+		3531756A1F9149DC0019A6C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175691F9149DC0019A6C7 /* SwiftyJSON.framework */; };
+		3531756B1F9149F80019A6C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175691F9149DC0019A6C7 /* SwiftyJSON.framework */; };
+		3531756C1F914A020019A6C7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175641F913A520019A6C7 /* Alamofire.framework */; };
+		3531756D1F914A020019A6C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175691F9149DC0019A6C7 /* SwiftyJSON.framework */; };
+		353175711F915E270019A6C7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3531756E1F915E260019A6C7 /* Result.framework */; };
+		353175721F915E270019A6C7 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3531756F1F915E260019A6C7 /* BrightFutures.framework */; };
+		353175731F915E270019A6C7 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353175701F915E270019A6C7 /* SwiftKeychainWrapper.framework */; };
+		353175751F92009C0019A6C7 /* NetworkAutehnticationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175741F92009B0019A6C7 /* NetworkAutehnticationDataSource.swift */; };
+		353175771F9206930019A6C7 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175761F9206930019A6C7 /* ShoppingListTableViewController.swift */; };
+		353175791F9213F40019A6C7 /* AuthorizationKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175781F9213F40019A6C7 /* AuthorizationKeychain.swift */; };
+		3531757A1F9213F40019A6C7 /* AuthorizationKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353175781F9213F40019A6C7 /* AuthorizationKeychain.swift */; };
+		358419D91F92380900DEAED7 /* NetworkShoppingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419D81F92380900DEAED7 /* NetworkShoppingListDataSource.swift */; };
+		358419DA1F92380900DEAED7 /* NetworkShoppingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419D81F92380900DEAED7 /* NetworkShoppingListDataSource.swift */; };
+		358419DC1F92386C00DEAED7 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419DB1F92386C00DEAED7 /* ShoppingList.swift */; };
+		358419DD1F92386C00DEAED7 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419DB1F92386C00DEAED7 /* ShoppingList.swift */; };
+		358419E01F923BCF00DEAED7 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419DF1F923BCF00DEAED7 /* JWT.swift */; };
+		358419E11F923BCF00DEAED7 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358419DF1F923BCF00DEAED7 /* JWT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +60,7 @@
 /* Begin PBXFileReference section */
 		353174F71F8E932D0019A6C7 /* ShoppingListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		353174FA1F8E932D0019A6C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		353174FC1F8E932D0019A6C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		353174FC1F8E932D0019A6C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		353174FF1F8E932D0019A6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		353175021F8E932E0019A6C7 /* ShoppingListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingListApp.xcdatamodel; sourceTree = "<group>"; };
 		353175041F8E932E0019A6C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +72,21 @@
 		353175191F8E932E0019A6C7 /* ShoppingListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3531751D1F8E932E0019A6C7 /* ShoppingListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAppUITests.swift; sourceTree = "<group>"; };
 		3531751F1F8E932E0019A6C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353175501F8EA2750019A6C7 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		353175521F8EA5E50019A6C7 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
+		353175541F8F2F1B0019A6C7 /* ShoppingListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemTableViewCell.swift; sourceTree = "<group>"; };
+		3531755A1F8FD9D00019A6C7 /* ShoppingListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItem.swift; sourceTree = "<group>"; };
+		353175641F913A520019A6C7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		353175691F9149DC0019A6C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3531756E1F915E260019A6C7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		3531756F1F915E260019A6C7 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		353175701F915E270019A6C7 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = Carthage/Build/iOS/SwiftKeychainWrapper.framework; sourceTree = "<group>"; };
+		353175741F92009B0019A6C7 /* NetworkAutehnticationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAutehnticationDataSource.swift; sourceTree = "<group>"; };
+		353175761F9206930019A6C7 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		353175781F9213F40019A6C7 /* AuthorizationKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationKeychain.swift; sourceTree = "<group>"; };
+		358419D81F92380900DEAED7 /* NetworkShoppingListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkShoppingListDataSource.swift; sourceTree = "<group>"; };
+		358419DB1F92386C00DEAED7 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		358419DF1F923BCF00DEAED7 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353175651F913A520019A6C7 /* Alamofire.framework in Frameworks */,
+				3531756A1F9149DC0019A6C7 /* SwiftyJSON.framework in Frameworks */,
+				353175711F915E270019A6C7 /* Result.framework in Frameworks */,
+				353175721F915E270019A6C7 /* BrightFutures.framework in Frameworks */,
+				353175731F915E270019A6C7 /* SwiftKeychainWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353175681F913C4C0019A6C7 /* Alamofire.framework in Frameworks */,
+				3531756B1F9149F80019A6C7 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3531756C1F914A020019A6C7 /* Alamofire.framework in Frameworks */,
+				3531756D1F914A020019A6C7 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,7 @@
 				353175111F8E932E0019A6C7 /* ShoppingListAppTests */,
 				3531751C1F8E932E0019A6C7 /* ShoppingListAppUITests */,
 				353174F81F8E932D0019A6C7 /* Products */,
+				3531755E1F9139B90019A6C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +147,11 @@
 		353174F91F8E932D0019A6C7 /* ShoppingListApp */ = {
 			isa = PBXGroup;
 			children = (
+				3531757B1F92179A0019A6C7 /* authorization */,
+				3531757D1F9217ED0019A6C7 /* login */,
+				3531757C1F9217D10019A6C7 /* shoppinglist */,
+				358419DE1F923BB300DEAED7 /* util */,
 				353174FA1F8E932D0019A6C7 /* AppDelegate.swift */,
-				353174FC1F8E932D0019A6C7 /* ViewController.swift */,
 				353174FE1F8E932D0019A6C7 /* Main.storyboard */,
 				353175041F8E932E0019A6C7 /* Assets.xcassets */,
 				353175061F8E932E0019A6C7 /* LaunchScreen.storyboard */,
@@ -128,6 +179,57 @@
 			path = ShoppingListAppUITests;
 			sourceTree = "<group>";
 		};
+		3531755E1F9139B90019A6C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3531756F1F915E260019A6C7 /* BrightFutures.framework */,
+				3531756E1F915E260019A6C7 /* Result.framework */,
+				353175701F915E270019A6C7 /* SwiftKeychainWrapper.framework */,
+				353175691F9149DC0019A6C7 /* SwiftyJSON.framework */,
+				353175641F913A520019A6C7 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3531757B1F92179A0019A6C7 /* authorization */ = {
+			isa = PBXGroup;
+			children = (
+				353175781F9213F40019A6C7 /* AuthorizationKeychain.swift */,
+				353175521F8EA5E50019A6C7 /* AuthorizationData.swift */,
+				353175741F92009B0019A6C7 /* NetworkAutehnticationDataSource.swift */,
+			);
+			path = authorization;
+			sourceTree = "<group>";
+		};
+		3531757C1F9217D10019A6C7 /* shoppinglist */ = {
+			isa = PBXGroup;
+			children = (
+				353175761F9206930019A6C7 /* ShoppingListTableViewController.swift */,
+				353175541F8F2F1B0019A6C7 /* ShoppingListItemTableViewCell.swift */,
+				358419DB1F92386C00DEAED7 /* ShoppingList.swift */,
+				3531755A1F8FD9D00019A6C7 /* ShoppingListItem.swift */,
+				358419D81F92380900DEAED7 /* NetworkShoppingListDataSource.swift */,
+			);
+			path = shoppinglist;
+			sourceTree = "<group>";
+		};
+		3531757D1F9217ED0019A6C7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				353175501F8EA2750019A6C7 /* LoginData.swift */,
+				353174FC1F8E932D0019A6C7 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		358419DE1F923BB300DEAED7 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				358419DF1F923BCF00DEAED7 /* JWT.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +240,7 @@
 				353174F31F8E932D0019A6C7 /* Sources */,
 				353174F41F8E932D0019A6C7 /* Frameworks */,
 				353174F51F8E932D0019A6C7 /* Resources */,
+				353175661F913A740019A6C7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,14 +360,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		353175661F913A740019A6C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftKeychainWrapper.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BrightFutures.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		353174F31F8E932D0019A6C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				353174FD1F8E932D0019A6C7 /* ViewController.swift in Sources */,
+				353174FD1F8E932D0019A6C7 /* LoginViewController.swift in Sources */,
+				358419DC1F92386C00DEAED7 /* ShoppingList.swift in Sources */,
+				353175791F9213F40019A6C7 /* AuthorizationKeychain.swift in Sources */,
+				358419D91F92380900DEAED7 /* NetworkShoppingListDataSource.swift in Sources */,
+				353175511F8EA2750019A6C7 /* LoginData.swift in Sources */,
+				353175531F8EA5E50019A6C7 /* AuthorizationData.swift in Sources */,
+				3531755B1F8FD9D00019A6C7 /* ShoppingListItem.swift in Sources */,
+				353175751F92009C0019A6C7 /* NetworkAutehnticationDataSource.swift in Sources */,
 				353174FB1F8E932D0019A6C7 /* AppDelegate.swift in Sources */,
+				353175551F8F2F1B0019A6C7 /* ShoppingListItemTableViewCell.swift in Sources */,
+				358419E01F923BCF00DEAED7 /* JWT.swift in Sources */,
 				353175031F8E932E0019A6C7 /* ShoppingListApp.xcdatamodeld in Sources */,
+				353175771F9206930019A6C7 /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358419DA1F92380900DEAED7 /* NetworkShoppingListDataSource.swift in Sources */,
+				358419DD1F92386C00DEAED7 /* ShoppingList.swift in Sources */,
 				353175131F8E932E0019A6C7 /* ShoppingListAppTests.swift in Sources */,
+				358419E11F923BCF00DEAED7 /* JWT.swift in Sources */,
+				3531757A1F9213F40019A6C7 /* AuthorizationKeychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +575,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +595,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +616,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListAppTests;
@@ -480,6 +637,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListAppTests;
@@ -496,6 +657,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListAppUITests;
@@ -512,6 +677,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG83NC5FHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShoppingListAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.cwrose.ShoppingListAppUITests;

@@ -17,9 +17,9 @@ class ShoppingListTableViewController: UITableViewController {
     
     var shoppingListDataSource = NetworkShoppingListDataSource()
     
-    var shoppingListItems = [ShoppingListItem]()
+    var shoppingListItems: [ShoppingListItem] = []
     
-    var shoppingLists = [ShoppingList]()
+    var shoppingLists: [ShoppingList] = []
     
     var currentShoppingList: ShoppingList?
     
@@ -70,11 +70,11 @@ class ShoppingListTableViewController: UITableViewController {
         }
         
         let item = shoppingListItems[indexPath.row]
-        debugPrint("configuring row number \(indexPath.row) for item \(item.name)")
+        debugPrint("configuring row number \(indexPath.row) for item \(String(describing: item.name))")
 
         cell.shoppingListItemTitleLabel.text = item.name
         cell.shoppingListItemDescriptionLabel.text = item.description
-        cell.shoppingListItemCheckedSwitch.isOn = item.checked
+        cell.shoppingListItemCheckedSwitch.isOn = item.checked!
 
         // Configure the cell...
 

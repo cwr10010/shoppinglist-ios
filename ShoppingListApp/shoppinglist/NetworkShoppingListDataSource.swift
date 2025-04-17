@@ -17,6 +17,8 @@ protocol ShoppingListDataSource {
     func readShoppingListItems(shoppingList: ShoppingList) -> Future<[ShoppingListItem], AuthenticationError>
 }
 
+fileprivate typealias UserId = String
+
 class NetworkShoppingListDataSource: ShoppingListDataSource {
     
     var authorizationKeyChain = AuthorizationKeychain()
@@ -27,7 +29,7 @@ class NetworkShoppingListDataSource: ShoppingListDataSource {
 
         request { (userId, headers) in
 
-            Alamofire.request("https://shoppinglist-test.cwrose.de/api/users/\(String(describing: userId))/shopping-list", headers: headers)
+            AF.request("https://shoppinglist-test.cwrose.de/api/users/\(String(describing: userId))/shopping-list", headers: headers)
                 .validate(statusCode: [200])
                 .responseData { dataResponse in
                     guard let data = dataResponse.data, dataResponse.error == nil else {
@@ -52,7 +54,7 @@ class NetworkShoppingListDataSource: ShoppingListDataSource {
         request { (userId, headers) in
             
             let url = "https://shoppinglist-test.cwrose.de/api/users/\(String(describing: userId))/shopping-list/\(String(describing: shoppingList.shoppingListId))/entries"
-            Alamofire.request(url, headers: headers)
+            AF.request(url, headers: headers)
                 .validate(statusCode: [200])
                 .responseData { dataResponse in
                     guard let data = dataResponse.data, dataResponse.error == nil else {
@@ -71,7 +73,7 @@ class NetworkShoppingListDataSource: ShoppingListDataSource {
         return response.future
     }
     
-    func request(requestCall closure: (_ userId: String, _ headers: HTTPHeaders) -> Void) {
+    fileprivate func request(requestCall closure: (_ userId: UserId, _ headers: HTTPHeaders) -> Void) {
         guard let authToken = authorizationKeyChain.read(forKey: .authToken) else {
             fatalError("No auth token found. I don't know how you have come so far")
         }

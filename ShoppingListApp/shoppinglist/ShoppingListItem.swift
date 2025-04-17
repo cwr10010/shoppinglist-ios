@@ -10,11 +10,11 @@ class ShoppingListItem: Codable {
     
     // MARK: Properties
     
-    var id: String
-    var name: String
-    var description: String
-    var order: Int
-    var checked: Bool
+    var id: String?
+    var name: String?
+    var description: String?
+    var order: Int?
+    var checked: Bool?
     
 }
 

@@ -40,7 +40,7 @@ class NetworkAuthenticationDataSource: AuthenticationDataSource {
         let parameters = try! encoder.encode(loginData)
         
         let response = Promise<AuthorizationData, AuthenticationError>()
-        Alamofire.request(shoppingListAuthUrl, method: .post, parameters: JSON(parameters).dictionaryObject, encoding: JSONEncoding.default, headers: headers)
+        AF.request(shoppingListAuthUrl, method: .post, parameters: JSON(parameters).dictionaryObject, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: [200])
             .responseData { dataResponse in
             
@@ -59,10 +59,10 @@ class NetworkAuthenticationDataSource: AuthenticationDataSource {
     
     func refresh(forToken authToken: String) -> Future<AuthorizationData, AuthenticationError> {
         var headers = createDefaultHeader()
-        headers.updateValue("Bearer \(authToken)", forKey: "Authorization")
+        headers.update(name: "Authorization", value: "Bearer \(authToken)")
         
         let response = Promise<AuthorizationData, AuthenticationError>()
-        Alamofire.request(shoppingListAuthUrl, headers:headers)
+        AF.request(shoppingListAuthUrl, headers:headers)
             .validate(statusCode: [200])
             .responseData { dataResponse in
                 
